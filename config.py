@@ -6,7 +6,7 @@ APIKEY = "GOOGLE CALENDAR API"
 TIMEZONE = "America/Los_Angeles" #update your own timezone
 # Lighting
 PIXELS = 144
-GPIOPIN = 0
+GPIOPIN = 15 
 BARCOL = (0,100,0)
 EVENTCOL =[(255, 255, 0),(0,128,255)] # list of tuples used as meeting colours (255,255,0)
 FLIP = False                # Flip display (set to True if the strip runs from right to left)
