@@ -1,4 +1,3 @@
-
 import machine
 import _thread
 import utime
@@ -13,7 +12,7 @@ import json
 
 
 # Time with daylight savings time and time zone factored in, edit this to fit where you are
-worldtimeurl = "http://timeapi.io/api/TimeZone/zone?timezone=" + config.TIMEZONE
+worldtimeurl = "https://timeapi.io/api/TimeZone/zone?timezone=" + config.TIMEZONE
 # The ID of the public Google Calendar to be used
 calendar = config.CALENDAR
 # The API key for google... Not sure why it is needed, but it seems to be
