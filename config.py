@@ -4,7 +4,6 @@ CALENDAR = "YOUR CALENDAR GMAIL ADDRESS HERE"
 APIKEY = "GOOGLE CALENDAR API"
 #OAUTH_TOKEN = ""
 TIMEZONE = "America/Los_Angeles" #update your own timezone
-#CLOCK = "https://timeapi.io/api/TimeZone/zone?timeZone=america/los_angeles"
 # Lighting
 PIXELS = 144
 GPIOPIN = 0
