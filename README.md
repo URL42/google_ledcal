@@ -15,7 +15,7 @@ This project was inspired by [veebch/hometime](https://github.com/veebch/hometim
 ## 🔧 Hardware Required
 
 - Raspberry Pi Pico W
-- WS2812B-compatible LED strip (e.g. 144 LEDs, 5V)
+- WS2812B-compatible LED strip (e.g. 144 LEDs, 5V) - I also used an aluminum stip + diffuser
 - 5V power source (VBUS on Pico W if USB powered)
 - Basic wiring (3 pins: GND, VCC, Data)
 
