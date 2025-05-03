@@ -27,6 +27,8 @@ This project was inspired by [veebch/hometime](https://github.com/veebch/hometim
 | GND       | GND       |
 | GP0       | DATA      |
 
+![image](https://github.com/user-attachments/assets/a1304e4e-2c41-4f3b-a397-41daec45bad3)
+
 ## 🛠️ Installation
 
 1. Flash your Pico W with [MicroPython](https://micropython.org/download/rp2-pico-w/).
