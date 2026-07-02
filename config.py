@@ -4,6 +4,8 @@ CALENDAR = "YOUR CALENDAR GMAIL ADDRESS HERE"
 APIKEY = "GOOGLE CALENDAR API"
 #OAUTH_TOKEN = ""
 TIMEZONE = "America/Los_Angeles" #update your own timezone
+UTC_OFFSET_STD = -8         # Standard-time UTC offset in hours; must match TIMEZONE.
+                            # DST (US rules) is applied automatically on top of this.
 # Lighting
 PIXELS = 144
 GPIOPIN = 15 
@@ -11,7 +13,6 @@ BARCOL = (0,100,0)
 EVENTCOL =[(255, 255, 0),(0,128,255)] # list of tuples used as meeting colours (255,255,0)
 FLIP = False                # Flip display (set to True if the strip runs from right to left)
 GOOGLECALBOOL = True        # Boolean for whether to check google calendar page
-IGNORE_HARDCODED = False    # Set to True if you want Clock in at the start of first meeting and Clockout at end of last meeting
 SCHEDULE = {
     "monday": [
       {

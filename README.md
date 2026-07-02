@@ -54,6 +54,7 @@ ampy -p /dev/ttyACM0 put config.py
 | `CALENDAR`        | Your public Google Calendar ID (e.g., `abc123@group.calendar.google.com`)   |
 | `APIKEY`          | Your Google API key with Calendar API access                                |
 | `TIMEZONE`        | IANA timezone string (e.g., `America/Los_Angeles`)                          |
+| `UTC_OFFSET_STD`  | Standard-time UTC offset in hours (e.g., `-8` for Pacific); must match `TIMEZONE`. US DST is applied automatically. |
 | `PIXELS`          | Number of LEDs in the strip                                                 |
 | `GPIOPIN`         | GPIO pin number connected to the LED strip (e.g., `0`)                      |
 | `BARCOL`          | RGB tuple for normal progress bar color                                     |
@@ -66,7 +67,7 @@ ampy -p /dev/ttyACM0 put config.py
 
 ### 🌐 Time Sync & Calendar Integration
 
-- Time is fetched from [timeapi.io](https://timeapi.io) based on your configured timezone.
+- Time is synced via NTP (time.google.com, with fallbacks) and re-synced daily; local time is derived from `UTC_OFFSET_STD` with US DST rules applied automatically.
 - If `GOOGLECALBOOL = True`, the system pulls the current day’s events from your public Google Calendar.
 - If `False`, it uses the `SCHEDULE` dictionary in `config.py`.
 
